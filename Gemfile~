@@ -32,14 +32,33 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+#additional ones
+gem 'bootstrap-sass', '2.1'
+gem 'less-rails-bootstrap'
+gem 'therubyracer'
+gem 'bcrypt-ruby', '3.0.1'
+gem 'faker', '1.0.1'
+gem 'will_paginate', '3.0.3'
+gem 'bootstrap-will_paginate', '0.0.6'
+gem 'haml'
+gem 'haml-rails'
+gem 'pg'
+gem 'paperclip', '~> 2.7'
+gem 'cocaine', '0.4.0'
+gem 'json'
+gem 'geocoder'
+gem 'embed_logic', :git => 'https://github.com/eejones/EmbedLogic.git'
+gem 'has_scope'
+gem 'passenger'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]
