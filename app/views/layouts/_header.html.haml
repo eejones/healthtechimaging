@@ -1,0 +1,25 @@
+%header
+  .header
+    %div.headerrow1
+      %ul
+        %li= link_to "Sales", root_path
+        %li= link_to "Request Quote", '/Request_Quote'
+        %li= link_to "Service", '/Service'
+        %li= link_to "Accessories", "https://www.techno-aide.com/?dealer=interstate-imaging-6079", html_options ={:target => "_blank"}
+        %li= link_to "Logistics", '/Logistics'
+        %li= link_to "Success Stories", '/Success_Stories'
+        %li= link_to "Contact Us", '/Contact_Us'
+    %div.headerrow2
+      = link_to image_tag("Healthtech-imaging-2-line-logo-bluename.jpg", :alt=> "HealthTech Solutions"), root_path
+      .centerquote
+        Do you have used imaging equipment?
+        %b>
+          = link_to "Request a quote today!", '/Request_Quote'
+      %span
+        PO Box 5323
+        %br
+        Evansville, IN
+        %br
+        812-480-0862
+    %div.headerrow3
+

@@ -1,0 +1,15 @@
+!!! Strict
+%html
+  %head
+    %title Interstate Imaging - An Imaging Sales, Service, and Equipment Brokerage Firm for Indiana Imaging, Kentucky Imaging, Missouri Imaging and Illinois Imaging needs
+    = stylesheet_link_tag    "bluetemplate", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    %meta{:content => "text/html", :charset=>"utf-8", "http-equiv" => "Content-Type"}
+  %body
+    = javascript_include_tag "application"
+    %div.content
+      = render 'layouts/header'
+      .centralunit
+        = yield
+      = render 'layouts/footer'

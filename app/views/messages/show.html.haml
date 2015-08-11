@@ -1,0 +1,42 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @message.name
+%p
+  %b Email:
+  = @message.email
+%p
+  %b Company:
+  = @message.company
+%p
+  %b Item:
+  = @message.item
+%p
+  %b Phone:
+  = @message.phone
+%p
+  %b Category:
+  = @message.category
+%p
+  %b Created at:
+  = @message.created_at
+%p
+  %b Updated at:
+  = @message.updated_at
+%p
+  %b Preferredcontact:
+  = @message.preferredcontact
+%p
+  %b Companytype:
+  = @message.companytype
+%p
+  %b Itemtype:
+  = @message.itemtype
+%p
+  %b Details:
+  = @message.details
+
+= link_to 'Edit', edit_message_path(@message)
+\|
+= link_to 'Back', messages_path

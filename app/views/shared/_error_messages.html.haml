@@ -1,0 +1,9 @@
+- if @message.errors.any?
+  %div#error_explanation
+    %div.alert.alert-error
+      Your submission contains
+      = pluralize(@message.errors.count, "error")
+    %ul
+      - @message.errors.full_messages.each do |msg|      
+        %li 
+          #{msg}
