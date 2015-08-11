@@ -262,9 +262,9 @@ header div .headerrow1{
   height:22px;
   font-family: arial, helvetica, sans-serif;
   ul{
-    margin-left: 7%;
+    margin-left:auto;
     margin-right:auto;
-    width:95%;
+    width:75%;
     text-align:center;
     height:100%;
     align: center;
@@ -272,12 +272,12 @@ header div .headerrow1{
     li{
       display: inline;
       align: center;
-      width:auto;
+      width:20%;
       height:100%;
       float:left;
       margin:0px;
-      padding-right:2.5px;
-      padding-left: 2.5px;
+      padding-right:0px;
+      padding-left: 0px;
       height:100%;
       list-style-image: none;
       list-style-position: outside;
