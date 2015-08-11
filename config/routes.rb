@@ -18,6 +18,8 @@ HealthTech::Application.routes.draw do
 
   get '/Contact_Us', 			:to=> 'home#contact_us'
 
+  get '/Success_Stories', 		:to=> 'home#testimonials'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -21,3 +21,4 @@
     = link_to image_tag("sony imaging sales.gif", :alt=> "Sony",:style=>"margin-right:25px; width:auto; height:30px"), 'http://pro.sony.com/bbsc/video/collections-medical/video-md2go_the_doctor_is_in', html_options ={:target => "_blank"}
     = link_to image_tag("viztek imaging sales.gif", :alt=> "Viztek",:style=>"margin-right:25px"), 'http://viztek.net/', html_options ={:target => "_blank"}
     = link_to image_tag("quantum imaging sales.gif", :alt=> "Quantum Medical Imaging, LLC",:style=>"margin-right:25px"), 'http://www.quantummedical.net/', html_options ={:target => "_blank"}
+    = link_to image_tag("nhd imaging sales.gif", :alt=> "NHD",:style=>"margin-right:20px"), 'http://nhd.net/', html_options ={:target => "_blank"}

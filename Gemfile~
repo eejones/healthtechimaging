@@ -33,7 +33,7 @@ group :doc do
 end
 
 #additional ones
-gem 'bootstrap-sass', '2.1'
+gem 'bootstrap-sass', '~> 2.3.1.1'
 gem 'less-rails-bootstrap'
 gem 'therubyracer'
 gem 'bcrypt-ruby', '3.0.1'
