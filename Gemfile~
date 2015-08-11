@@ -51,6 +51,9 @@ gem 'embed_logic', :git => 'https://github.com/eejones/EmbedLogic.git'
 gem 'has_scope'
 gem 'passenger'
 
+#gems for heroku
+gem 'rails_12factor'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
