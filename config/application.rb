@@ -35,16 +35,18 @@ module HealthTech
     config.active_support.escape_html_entities_in_json = true
 
     # parameters by using an attr_accessible or attr_protected declaration.
- #   config.active_record.whitelist_attributes = true
+    config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
     config.assets.enabled = true
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-config.action_mailer.raise_delivery_errors = true
 
 config.action_mailer.perform_deliveries = true
+config.action_mailer.raise_delivery_errors = true
+
+config.action_mailer.delivery_method = :smtp
 
 config.action_mailer.smtp_settings = {
   :address              => "smtp.gmail.com",

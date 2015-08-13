@@ -1,4 +1,5 @@
 %h2 REQUEST A QUOTE
+%h6 Shipping is free!
 %br/
 = form_for @message do |f|
   = render 'shared/error_messages'
@@ -6,12 +7,6 @@
     .requestquote1
       = f.label "Name*"
       = f.text_field :name, :autofocus => true
-      %br/
-      = f.label "Company*"
-      = f.text_field :company
-      %br/
-      = f.label "Company Type*"
-      = f.select :companytype, [['',''],['Hospital','Hospital'],['Orthopedic Office','Orthopedic Office'],['Imaging Center','Imaging Center'],["Doctor's Office","Doctor's Office"],['Urgent Care','Urgent Care'],['Veterinary','Veterinary'],['Chiropractor','Chiropractor'],['Podiatry','Podiatry'],['Mobile Service','Mobile Service'],['Dealer/Broker','Dealer/Broker']]
       %br/
       = f.label "Email*"
       = f.text_field :email
@@ -23,19 +18,13 @@
       = f.file_field :picture, multiple: true, accept: "image/jpeg, image/jpg, image/gif, image/png"
       %br/
     .requestquote2
+      = f.label "Company*"
+      = f.text_field :company
+      %br/
       = f.label "Request Type*"
       = f.select :category, [['Selling Equipment','Selling Equipment'], ['Purchasing Equipment','Purchasing Equipment']]
       %br/
       = f.label "Item Type*"
       = f.select :itemtype, [['',''],['Radiographic Room','Radiographic Room'],['C-Arm','C-Arm'],['Ultrasound','Ultrasound'],['DR Detector','DR Detector'],['Digital Portable'],['CR Reader','CR Reader'],['CR Cassettes','CR Cassettes'],['R/F Room','R/F Room'],['U-Arm','U-Arm'],['Straight Arm','Straight Arm'],['MRI','MRI'],['CT Scanners','CT Scanners'],['Diagnostic Display Monitor','Diagnostic Display Monitor'],['Oncology-specific CR Reader','Oncology-specific CR Reader'],['PACS System','PACS System'],['Printer','Printer'],['Supplies','Supplies'],['Accessories','Accessories']]
-      %br/
-      = f.label "Brand"
-      = f.select :item, [['Canon','Cannon'],['Konica Minolta','Konica Minolta'],['UMG/Del Medical','UMG/Del Medical'],['Varian','Varian'],['Carestream','Carestream'],['Fujifilm','Fujifilm'],['Sony','Sony'],['Viztek','Viztek'],['Quantum Medical Imaging','Quantum Medical Imaging'],['Other','Other']]
-      %br/
-      = f.label "Additional Details"
-      = f.text_field :details
-      %br/
-      = f.label "Preferred Contact Method"
-      = f.select :preferredcontact, [['Email','Email'],['Phone','Phone']]
     = f.submit "Submit Request", class: "submitmessagebutton"
 = debug(params) if Rails.env.development?

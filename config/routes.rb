@@ -14,7 +14,7 @@ HealthTech::Application.routes.draw do
 
   get '/About_Us',    		:to=> 'home#about_us'
 
-  get '/Logistics', 	:to=> 'home#logistics'
+  get '/What_We_Buy', 	:to=> 'home#logistics'
 
   get '/Sell_Equipment',   		:to=> 'home#sell_equipment'
 

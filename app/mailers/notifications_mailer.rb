@@ -23,7 +23,9 @@ require 'mail'
       from "healthcareimagingsales@gmail.com"
       to "joneserice@gmail.com"
       subject "#{message.category} | #{message.email} | #{message.itemtype}";
-      body "Name: #{message.name} | Category: #{message.category} | Method of contact: #{message.preferredcontact} | Email: #{message.email} | Phone: #{message.phone} | Item Type: #{message.itemtype} | Brand preference: #{message.company} | Additional Details: #{message.details} |Company: #{message.company} | Company Type: #{message.companytype} | picture: #{message.picture}"
+      body "Name: #{message.name} | Category: #{message.category} | Method of contact: #{message.preferredcontact} | Email: #{message.email} | Phone: #{message.phone} | Item Type: #{message.itemtype} | Brand preference: #{message.company} | Additional Details: #{message.details} |Company: #{message.company} | Company Type: #{message.companytype} | Picture: #{message.picture}"
     end
+mail.deliver
+
   end
 end

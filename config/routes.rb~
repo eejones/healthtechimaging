@@ -1,4 +1,6 @@
 HealthTech::Application.routes.draw do
+  resources :message_attachments
+
   resources :messages
 
   get "home/index"
@@ -12,7 +14,7 @@ HealthTech::Application.routes.draw do
 
   get '/About_Us',    		:to=> 'home#about_us'
 
-  get '/Logistics', 	:to=> 'home#logistics'
+  get '/What_We_Sell', 	:to=> 'home#logistics'
 
   get '/Sell_Equipment',   		:to=> 'home#sell_equipment'
 
@@ -20,7 +22,7 @@ HealthTech::Application.routes.draw do
 
   get '/Success_Stories', 		:to=> 'home#testimonials'
 
-  get '/Buy_Equipment',   :to=> 'home#purchasing'
+  get '/Buy_Equipment',   :to=> 'messages#purchasing'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

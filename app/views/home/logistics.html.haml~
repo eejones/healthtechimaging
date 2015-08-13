@@ -1,42 +1,88 @@
 %div.salesall
-  %h2 LOGISTICS
+  %h2 What We Buy
+  Here are the types of equipment and brands that we buy. If you have any of the following,
+  %b>
+    = link_to "please reach out to us today!", '/Request_Quote'
+  Remember - Shipping is free!
   .leftsidetext
-    %p{:style=>'font-size:15px'} Interstate Imaging is now pleased to provide equipment sales brokerage services for our customers. 
     .textwrap
       = image_tag("imaging sales make money.gif", :alt=> "More Money!")
     %p If you are considering trading-in any of their existing imaging equipment to an OEM manufacturer when purchasing new equipment or simply desire to dispose of it, we strive to get you more money for your equipment through the utilization of our extensive network of industry contacts. 
-    %p We take care of everything, including the removal, thereby eliminating the hassle of trying to sell this equipment yourself via unknown or unscrupulous brokers.
-    %p Some of the imaging equipment that we have sold includes the following:
-  .sales1
-    %ul
-      %li CT’s
-      %li MRI’s
-      %li Cath Lab’s
-      %li Radiographic rooms
-      %li R/F rooms
-      %li Nuclear Medicine Cameras
-      %li Cysto Rooms
-      %li DR Detectors
-  .sales2
-    %ul
-      %li Digital Portables
-      %li CR Readers
-      %li CR Cassettes
-      %li Ultrasounds
-      %li Bone Densitometers
-      %li CCD Cameras
-      %li Digital Mammography
-      %li C-Arms
-      %li PET/CT
+    %p We take care of everything, including the removal, thereby eliminating the hassle of trying to sell this equipment yourself via unknown or dishonest brokers.
+  .allmysales
+    .sales1
+      %b CT's
+      %ul
+        %li GE
+        %li Siemens
+        %li Philips
+      %b CR Cassettes
+      %ul
+        %li Fuji
+        %li AGFA
+      %b Cath Lab's
+      %ul
+        %li GE
+        %li Siemens
+        %li Philips
+      %b Nuclear Medicine Cameras
+      %ul
+        %li GE
+        %li Siemens
+      %b Digital Mammography
+      %ul
+        %li Hologic
+        %li GE
+        %p -We will purchase 2D and 3D units
+        %br  
+    .sales2
+      %b CR Readers
+      %ul
+        %li Fuji
+        %li Carestream (Kodak)
+        %li AGFA
+      %b Radiographic Rooms
+      %ul
+        %li Quantum
+        %li Del Medical
+        %li Summit
+        %li GE
+        %p -Floor-mounted and less than 10 yrs only
+      %b Bone Density
+      %ul
+        %li Hologic
+        %li GE
+      %b PET/CT
+      %ul
+        %li GE
+        %li Siemens
+        %li Philips
+    .sales3
+      %b C-Arms
+      %ul
+        %li OEC (GE)
+        %li Ziehm
+      %b Ultrasound's
+      %ul
+        %li GE
+        %li Philips
+      %b DR Detectors
+      %ul
+        %li Canon
+        %li Carestream
+        %li Shimadzu
+        %li AGFA
+        %li Konica
+        %li Fuji
+        %li GE
+        %li Siemens
+        %li Philips
+        %p - Fixed, tethered and wireless
+      %b MRI's
+      %ul 
+        %li GE
+        %li Siemens
+        %li Philips
+%br/
 %br/
 %div{style: "text-align:center; margin-top:-20px"}
-  If your facility or practice would benefit from our equipment brokerage services, please contact:
-  %br{style: "line-height:30px"} 
-  %b Andrew Brinkman
-  %br
-  Director of Logistics
-  %br
-  (502) 640-7786
-  %br
-  %a{:href=>"mailto:ABrinkman@interstateimaging.net"} ABrinkman@interstateimaging.net
-
