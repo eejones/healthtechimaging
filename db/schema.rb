@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20150811124918) do
     t.string   "companytype"
     t.string   "itemtype"
     t.text     "details"
+    t.string   "picture"
   end
 
 end

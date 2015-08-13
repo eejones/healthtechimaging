@@ -1,0 +1,4 @@
+class FixSalescatColumn < ActiveRecord::Migration
+  def change
+  end
+end

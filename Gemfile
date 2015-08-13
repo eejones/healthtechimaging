@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.1.4'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
@@ -51,8 +51,20 @@ gem 'embed_logic', :git => 'https://github.com/eejones/EmbedLogic.git'
 gem 'has_scope'
 gem 'passenger'
 
+#to allow for uploading of images - http://stackoverflow.com/questions/21411988/rails-4-multiple-image-or-file-upload-using-carrierwave
+gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
+
+#for sending mail wiht other features like attachments
+gem 'mail'
+
 #gems for heroku
 gem 'rails_12factor'
+
+#using active_attr for holes in active record to use with contact us form since there is no database backing it with nothing saved
+gem 'active_attr'
+
+#using validates phone number to make sure a valid phone # is entered
+gem 'validates_phone_number'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

@@ -1,3 +1,7 @@
+%div
+  %h2 Looking to buy used equipment?
+  %p HealthTech Imaging comes across and purchases many types of imaging equipment. Please let us know what you are looking for and we will get back to you within 48 hours:
+
 %h2 REQUEST A QUOTE
 %br/
 = form_for @message do |f|
@@ -19,12 +23,9 @@
       = f.label "Phone*"
       = f.text_field :phone
       %br/
-      = f.label "Attach Images*"
-      = f.file_field :picture, multiple: true, accept: "image/jpeg, image/jpg, image/gif, image/png"
-      %br/
     .requestquote2
       = f.label "Request Type*"
-      = f.select :category, [['Selling Equipment','Selling Equipment'], ['Purchasing Equipment','Purchasing Equipment']]
+      = f.select :category, [['Purchasing','Purchasing'], ['Looking to Sell','Looking to Sell']]
       %br/
       = f.label "Item Type*"
       = f.select :itemtype, [['',''],['Radiographic Room','Radiographic Room'],['C-Arm','C-Arm'],['Ultrasound','Ultrasound'],['DR Detector','DR Detector'],['Digital Portable'],['CR Reader','CR Reader'],['CR Cassettes','CR Cassettes'],['R/F Room','R/F Room'],['U-Arm','U-Arm'],['Straight Arm','Straight Arm'],['MRI','MRI'],['CT Scanners','CT Scanners'],['Diagnostic Display Monitor','Diagnostic Display Monitor'],['Oncology-specific CR Reader','Oncology-specific CR Reader'],['PACS System','PACS System'],['Printer','Printer'],['Supplies','Supplies'],['Accessories','Accessories']]
@@ -38,4 +39,3 @@
       = f.label "Preferred Contact Method"
       = f.select :preferredcontact, [['Email','Email'],['Phone','Phone']]
     = f.submit "Submit Request", class: "submitmessagebutton"
-= debug(params) if Rails.env.development?

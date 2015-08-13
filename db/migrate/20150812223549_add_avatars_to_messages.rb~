@@ -1,0 +1,5 @@
+class AddAvatarsToMessages < ActiveRecord::Migration
+  def change
+    add_column :messages, :avatars, :json
+  end
+end

@@ -1,0 +1,5 @@
+class DropMessageattachmentsTable < ActiveRecord::Migration
+  def change
+    drop_table :message_attachment
+  end
+end

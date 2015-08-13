@@ -39,7 +39,7 @@ html body {
   height:auto;
   padding-top: 0px;
 /*  background-color: $backgroundblue;*/
-  background-image: url("white-xray-bg.gif");
+  background-image: url("grid-background25.png");
   background-repeat: repeat;
   background-position: center top;
   font-family: arial, helvetica, sans-serif;
@@ -98,6 +98,20 @@ html body {
   background-color: $offwhite;
   border-radius: 6px 6px 6px 6px;
   min-height:100%;
+  p#notice{
+    font-size:26px;
+    text-align: center;
+    background-color: $submitbgblue;
+    color: $dbluetitletxt;
+    font-weight:bold;
+    margin-top:15px;
+    margin-bottom:10px;
+    padding-left-ltr-source: physical;
+    padding-left-rtl-source: physical;
+    padding-right-ltr-source: physical;
+    padding-right-rtl-source: physical;
+    border-radius: 6px 6px 6px 6px;
+  }
   p{
     text-align:left;
     font-size: 14px;
@@ -272,7 +286,7 @@ header div .headerrow1{
     li{
       display: inline;
       align: center;
-      width:19%;
+      width:20%;
       height:100%;
       float:left;
       margin:0px;

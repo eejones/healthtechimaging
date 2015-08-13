@@ -13,6 +13,7 @@ class CreateMessages < ActiveRecord::Migration
       t.string :companytype
       t.string :itemtype
       t.text :details
+      t.string :picture
 
       t.timestamps
     end
