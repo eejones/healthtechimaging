@@ -1,5 +1,7 @@
 class Message
 
+ extend CarrierWave::Mount
+
   mount_uploader :avatarpic, AvatarpicUploader
 
   include ActiveAttr::Model

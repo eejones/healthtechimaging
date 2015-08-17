@@ -30,16 +30,19 @@ class MessagesController < ApplicationController
 #may need to add this(or similar) to send attachments
 #       params[:post_attachments]['avatar'].each do |a|
 #          @post_attachment = @post.post_attachments.create!(:avatar => a)
-        unless (params[:message][:picture]).nil?
-          uploader = AvatarpicUploader.new
-          uploader.cache!(params[:message][:picture])
-          @file_name = uploader.filename
-          @file_data = uploader.file.read()
+        unless @message.picture.nil?
+#          @message.avatarpic = params[:message][:picture]
+#params[:message][:picture]
+#        end
+          @file_name = @message.picture
+          @file_data = @message.picture[0].read()
         end
-
-        redirect_to root_url, :notice => 'Thank you for contacting us. We will get back to you soon!'
      
         NotificationsMailer.new_message(@message,@file_name,@file_data).deliver
+#        NotificationsMailer.new_message(@message).deliver
+
+        redirect_to root_url, :notice => 'Thank you for contacting us. We will get back to you soon!'
+
       else
         respond_to do |format|
           format.html {render :action=> "new"}
