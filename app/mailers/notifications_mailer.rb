@@ -22,12 +22,17 @@ require 'mail'
 
 #    attachments= message.picture[:filename]
 #    attachments[message.picture.original_filename] = File.read(message.picture.path
-    mail(:subject => "#{message.category} | #{message.email} | #{message.itemtype}", :body => "Name: #{message.name} | Category: #{message.category} | Method of contact: #{message.preferredcontact} | Email: #{message.email} | Phone: #{message.phone} | Item Type: #{message.itemtype} | Brand preference: #{message.company} | Additional Details: #{message.details} |Company: #{message.company} | Company Type: #{message.companytype} | Filename: #{file_name} | Filedata: #{file_data}")
+#    mail.attachments['filename.jpg'] = file_data
+
+#attachments['file-name.jpg'] = File.read(file_name[0])
+attachments['file-name.jpg'] = file_data
+
+    mail(:subject => "#{message.category} | #{message.email} | #{message.itemtype}", :body => "Name: #{message.name} | Category: #{message.category} | Method of contact: #{message.preferredcontact} | Email: #{message.email} | Phone: #{message.phone} | Item Type: #{message.itemtype} | Brand preference: #{message.company} | Additional Details: #{message.details} |Company: #{message.company} | Company Type: #{message.companytype})
     end
 =begin
 [#<ActionDispatch::Http::UploadedFile:0x007f596c8e2110 @tempfile=#<Tempfile:/tmp/RackMultipart20150817-3624-1ofh207>, @original_filename="dino.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"message[picture][]\"; filename=\"dino.jpeg\"\r\nContent-Type: image/jpeg\r\n">]
 =end
-#mail.attachments['filename.jpg'] = File.read('/path/to/filename.jpg')
+
 
 
 end
