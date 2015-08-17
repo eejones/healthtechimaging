@@ -6,6 +6,8 @@ require "action_mailer/railtie"
 #require "active_resource/railtie"
 require "sprockets/railtie"
 
+#require 'carrierwave/orm/activerecord'
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)

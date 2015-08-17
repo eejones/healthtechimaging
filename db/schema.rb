@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150811124918) do
+ActiveRecord::Schema.define(version: 20150817225305) do
 
   create_table "messages", force: true do |t|
     t.string   "name"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20150811124918) do
     t.string   "itemtype"
     t.text     "details"
     t.string   "picture"
+    t.string   "avatarpic"
   end
 
 end

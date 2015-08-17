@@ -1,6 +1,6 @@
 class Message
 
-  #mount_uploader :avatar, AvatarUploader
+  mount_uploader :avatarpic, AvatarpicUploader
 
   include ActiveAttr::Model
 
@@ -22,7 +22,6 @@ class Message
   validates_presence_of :itemtype
   validates_presence_of :company
   validates_presence_of :category
-  validates_presence_of :companytype
 
 
   HUMANIZED_ATTRIBUTES = {
