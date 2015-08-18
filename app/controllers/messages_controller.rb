@@ -37,11 +37,12 @@ class MessagesController < ApplicationController
           @file_name = @message.picture
           @file_data = @message.picture[0].read()
         end
+
+        redirect_to root_url, :notice => 'Thank you for contacting us. We will get back to you soon!'
      
         NotificationsMailer.new_message(@message,@file_name,@file_data).deliver
 #        NotificationsMailer.new_message(@message).deliver
 
-        redirect_to root_url, :notice => 'Thank you for contacting us. We will get back to you soon!'
 
       else
         respond_to do |format|

@@ -27,7 +27,7 @@ require 'mail'
 #attachments['file-name.jpg'] = File.read(file_name[0])
 attachments['file-name.jpg'] = file_data
 
-    mail(:subject => "#{message.category} | #{message.email} | #{message.itemtype}", :body => "Name: #{message.name} | Category: #{message.category} | Method of contact: #{message.preferredcontact} | Email: #{message.email} | Phone: #{message.phone} | Item Type: #{message.itemtype} | Brand preference: #{message.company} | Additional Details: #{message.details} |Company: #{message.company} | Company Type: #{message.companytype})
+    mail(:subject => "#{message.category} | #{message.email} | #{message.itemtype}", :body => "Name: #{message.name} | Category: #{message.category} | Method of contact: #{message.preferredcontact} | Email: #{message.email} | Phone: #{message.phone} | Item Type: #{message.itemtype} | Brand preference: #{message.company} | Additional Details: #{message.details} |Company: #{message.company} | Company Type: #{message.companytype}")
     end
 =begin
 [#<ActionDispatch::Http::UploadedFile:0x007f596c8e2110 @tempfile=#<Tempfile:/tmp/RackMultipart20150817-3624-1ofh207>, @original_filename="dino.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"message[picture][]\"; filename=\"dino.jpeg\"\r\nContent-Type: image/jpeg\r\n">]
