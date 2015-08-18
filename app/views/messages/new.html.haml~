@@ -8,9 +8,6 @@
       = f.label "Name*"
       = f.text_field :name, :autofocus => true
       %br/
-      = f.label "Company*"
-      = f.text_field :company
-      %br/
       = f.label "Email*"
       = f.text_field :email
       %br/
@@ -21,6 +18,9 @@
       = f.file_field :picture, multiple: true, accept: "image/jpeg, image/jpg, image/gif, image/png"
       %br/
     .requestquote2
+      = f.label "Company*"
+      = f.text_field :company
+      %br/
       = f.label "Request Type*"
       = f.select :category, [['Selling Equipment','Selling Equipment'], ['Purchasing Equipment','Purchasing Equipment']]
       %br/

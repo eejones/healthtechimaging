@@ -24,12 +24,14 @@ class Message
   validates_presence_of :itemtype
   validates_presence_of :company
   validates_presence_of :category
+  validates_presence_of :picture
 
 
   HUMANIZED_ATTRIBUTES = {
    :companytype => "Company Type",
    :itemtype => "Item Type",
    :item => "Brand Preference"
+   :picture => "Attached Image"
   }
   def self.human_attribute_name(attr, options={})
     HUMANIZED_ATTRIBUTES[attr.to_sym] || super
