@@ -30,7 +30,7 @@ class Message
   HUMANIZED_ATTRIBUTES = {
    :companytype => "Company Type",
    :itemtype => "Item Type",
-   :item => "Brand Preference"
+   :item => "Brand Preference",
    :picture => "Attached Image"
   }
   def self.human_attribute_name(attr, options={})
