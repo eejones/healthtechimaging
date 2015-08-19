@@ -1,12 +1,13 @@
 %p{:id=>"notice"}= notice
 %div.home
   %h2 EXTENSIVE EXPERIENCE IN IMAGING
-  %p We’ve brought our expertise to a wide range of healthcare and veterinary clients.
   %p.requestquotebutton
-    %p= link_to image_tag("request quote imaging sales.png", :alt=> "Request a Quote for Medical Imaging Sales or Medical Imaging Service"), '/Request_Quote'
-  = image_tag("fuji-carbon-cr.gif", :alt=> "Fuji Carbon CR",:style=>"width:auto; height:25px")
-  = image_tag("c-arm.gif", :alt=> "C-Arm")
-  = image_tag("philips-ultrasound.gif", :alt=> "Ultrasound")
-  = image_tag("GE-CT.gif", :alt=> "More Money!")
-  = image_tag("digital-mammo-machine.gif", :alt=> "Digital Mammo")
-  = image_tag("canon-dr-detector.gif", :alt=> "DR Detector")
+    %p= link_to image_tag("request quote imaging sales.png", :alt=> "Request a Quote for Medical Imaging Sales or Medical Imaging Service"), '/Request_Quote' 
+  %p We’ve brought our expertise to a wide range of healthcare and veterinary clients.
+
+  = image_tag("fuji-carbon-cr.gif", :alt=> "Fuji Carbon CR",:style=>"width:auto; height:115px")
+  = image_tag("oec-9800-c-arm.gif", :alt=> "C-Arm",:style=>"width:auto; height:130px")
+  = image_tag("philips-ultrasound.gif", :alt=> "Ultrasound",:style=>"width:auto; height:160px")
+  = image_tag("GE-CT.gif", :alt=> "More Money!",:style=>"width:auto; height:130px")
+  = image_tag("digital-mammo-machine.gif", :alt=> "Digital Mammo",:style=>"width:auto; height:130px")
+  = image_tag("canon-dr-detector.gif", :alt=> "DR Detector",:style=>"width:auto; height:115px")

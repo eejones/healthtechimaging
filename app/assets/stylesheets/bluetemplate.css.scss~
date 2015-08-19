@@ -826,13 +826,13 @@ aside{
     font-weight: bold;
     }
   img{
-    width: 40px;
+    width: 140px;
     height: auto;
   }
   .requestquotebutton{
     float: right;
     img{
-      width:200px;
+      width:100px;
       height:auto;
     }
   }
