@@ -4,7 +4,9 @@ require 'mail'
 
   default :from => "healthcareimagingsales@gmail.com"
 #updated so that we send to a shared email address
-  default :to => "joneserice@gmail.com"
+  default :to => "healthcareimagingsales@gmail.com"
+  default :cc => "joneserice@gmail.com, abbrinkmanii@gmail.com"
+#  default :cc => "joneserice@gmail.com"
 
   def new_message(message,file_name,file_data)
 #  def new_message(message)
