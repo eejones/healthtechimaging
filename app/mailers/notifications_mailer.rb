@@ -3,6 +3,7 @@ class NotificationsMailer < ActionMailer::Base
 require 'mail'
 
   default :from => "healthcareimagingsales@gmail.com"
+#updated so that we send to a shared email address
   default :to => "joneserice@gmail.com"
 
   def new_message(message,file_name,file_data)
